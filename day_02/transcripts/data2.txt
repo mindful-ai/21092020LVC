@@ -1,0 +1,103 @@
+IMAGINE by JOHN LENNON
+------------------------------------------------------------
+Imagine there's no heaven
+It's easy if you try
+No hell below us
+Above us only sky
+Imagine all the people living for today
+Imagine there's no countries
+It isn't hard to do
+Nothing to kill or die for
+And no religion too
+Imagine all the people living life in peace, you
+You may say I'm a dreamer
+But I'm not the only one
+I hope some day you'll join us
+And the world will be as one
+Imagine no possessions
+I wonder if you can
+No need for greed or hunger
+A brotherhood of man
+Imagine all the people sharing all the world, you
+You may say I'm a dreamer
+But I'm not the only one
+I hope some day you'll join us
+And the world will be as one
+
+
+
+____________________________________________________________
+
+Word Histogram
+Word           |Occurances
+
+------------------------------------------------------------
+Imagine         | 6
+there's         | 2
+no              | 4
+heaven          | 1
+It's            | 1
+easy            | 1
+if              | 2
+you             | 4
+try             | 1
+No              | 2
+hell            | 1
+below           | 1
+us              | 4
+Above           | 1
+only            | 3
+sky             | 1
+all             | 4
+the             | 8
+people          | 3
+living          | 2
+for             | 3
+today           | 1
+countries       | 1
+It              | 1
+isn't           | 1
+hard            | 1
+to              | 2
+do              | 1
+Nothing         | 1
+kill            | 1
+or              | 2
+die             | 1
+And             | 3
+religion        | 1
+too             | 1
+life            | 1
+in              | 1
+peace,          | 1
+You             | 2
+may             | 2
+say             | 2
+I'm             | 4
+a               | 2
+dreamer         | 2
+But             | 2
+not             | 2
+one             | 4
+I               | 3
+hope            | 2
+some            | 2
+day             | 2
+you'll          | 2
+join            | 2
+world           | 2
+will            | 2
+be              | 2
+as              | 2
+possessions     | 1
+wonder          | 1
+can             | 1
+need            | 1
+greed           | 1
+hunger          | 1
+A               | 1
+brotherhood     | 1
+of              | 1
+man             | 1
+sharing         | 1
+world,          | 1
