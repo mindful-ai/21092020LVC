@@ -93,3 +93,108 @@ print('FIBOLIST: ', fibolist)
 # -------------------------------------------------
 # LAB 5 - Print multiplication table into a file
 # -------------------------------------------------
+
+# -------------------------------------------------
+# LAB 6 - Determine the time taken to run the loop
+# -------------------------------------------------
+
+L = []
+for i in range(1000):
+  L.append(random.randint(1, 100))
+
+
+# -------------------------------------------------
+# LAB 7 - Script to organize data
+# -------------------------------------------------
+
+# Creating full path list
+path = os.getcwd()
+fullpaths = []
+for file in files:
+	fullpaths.append(os.path.join(path, file))
+
+# Creating the list of directories to be created
+extlist = []
+for path in fullpaths:
+	extlist.append(os.path.splitext(os.path.basename(path))[1][1:])
+dirlist = list(set(extlist))
+
+# Creating the directories
+for dname in dirlist:
+	os.mkdir(dname)
+
+# Logic to move the files
+for path in fullpaths:
+	if(os.path.isfile(path)):
+		src  = path
+		dst  = os.path.split(src)
+		ext  = os.path.splitext(dst[1])
+		fdst = os.path.join(dst[0], ext[1][1:], dst[1])
+		shutil.move(src, fdst)
+
+# -------------------------------------------------
+# LAB 8 - Student Class
+# -------------------------------------------------
+
+class student(object):
+
+
+    # Data/attributes
+    def __init__(self, name, cls, rid):
+        print('Initializing values.....')
+        pass
+
+    # Functions/methods
+
+    def setschoolname(self, schoolname):
+        pass
+
+    def printinfo(self):
+        self.state = 'Karnataka'
+        pass
+
+    def setMaths(self, marks):
+        pass
+
+    def setPhysics(self, marks):
+        pass
+
+    def setChemistry(self, marks):
+        pass
+
+    def setBiology(self, marks):
+        pass
+
+    def calcAverage(self):
+        pass
+
+# -------------------------------------------------
+
+	print('STATE : ', self.state)
+        print('SCHOOL: ', student.schoolname)
+        print('-----------------------------------')
+        print('NAME: ', self.name)
+        print('CLASS: ', self.cls)
+        print('REG ID:', self.regid)
+        print('-----------------------------------')
+        print('MATHS    : ', self.maths)
+        print('PHYSICS  : ', self.physics)
+        print('CHEMISTRY: ', self.chemistry)
+        print('BIOLOGY  : ', self.biology)
+        print('-----------------------------------')
+        print('AVERAGE  : ', self.average)
+        print('NSTUDENTS  ------> ', student.nstudents)
+        print('\n')
+
+# -------------------------------------------------
+# LAB 9 - Extended Student Class
+# -------------------------------------------------
+
+1. Extend the class student
+2. Add new attributes
+
+	self.native = native # New attribute
+        self.extra = extra   # New attribute
+3. Define a new function getGrade
+4. Override the printinfo() to accomodate newly
+   added features
