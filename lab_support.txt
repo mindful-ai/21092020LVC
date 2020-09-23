@@ -104,7 +104,7 @@ for i in range(1000):
 
 
 # -------------------------------------------------
-# LAB 7 - Script to organize data
+# LAB 7A - Script to organize data
 # -------------------------------------------------
 
 # Creating full path list
@@ -131,6 +131,21 @@ for path in fullpaths:
 		ext  = os.path.splitext(dst[1])
 		fdst = os.path.join(dst[0], ext[1][1:], dst[1])
 		shutil.move(src, fdst)
+		
+# -------------------------------------------------
+# Lab 7B - Experiment using subprocess
+# -------------------------------------------------
+
+subprocess.call('ipconfig -all', shell=True)
+c = subprocess.check_output('ipconfig -all', shell=True)
+c = c.decode()
+lines = c.split('\r\n')
+phyaddrs = []
+for line in lines:
+    if('Physical' in line):
+        phyaddrs.append(line.split(' : ')[1])
+print(phyaddrs)
+
 
 # -------------------------------------------------
 # LAB 8 - Student Class
