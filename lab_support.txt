@@ -277,6 +277,21 @@ print(message('Hello Oracle!'))
 # LAB 12 - Extract information from a resume
 # -------------------------------------------------
 
+# regex_ex.py
+
+import re
+
+data = ['ab', 'abc', 'a5e', 'a6f', '123 a6c', 'a5b', 'a55b', 'a555b', 'a5555b',
+        'a55555b', 'a555555b', 'a5xb', '1/4', '3+2=5',
+        'def ghi', 'abc ab', 'abbc', 'axcd', 'ab567v']
+
+for item in data:
+  m = re.search(r'a(55){2}\D', item)
+  if m:
+      print (m.group() + ' matched in ' + '\'' + item + '\'')
+      
+      
+
 # resume.txt
 Subject line: Senior Customer Service Representative Seeks Customer Service Team Lead Position with XYZ (Job ID #888701)
 
