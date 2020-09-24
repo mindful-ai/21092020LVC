@@ -311,7 +311,7 @@ import re
 EOF = ''
 # Read the file as a text
 
-f = open(r"C:\Users\Purushotham\Desktop\oracle_july\day_03\regex_ex\resume.txt", "r")
+f = open( "path_to_resume.txt", "r" )
 content = f.read()
 f.close()
 # Patterns
