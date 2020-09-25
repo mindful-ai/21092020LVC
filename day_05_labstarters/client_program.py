@@ -10,15 +10,20 @@ def client_program():
 
     # ---------------------------------------------------------------
 
-    # take input
+    # take user input
+    message = input(" -> ")  
 
-    # send message
+    while message.lower().strip() != 'bye':
+        # send message
+        client_socket.send(message.encode())
 
-    # receive response
+        # receive response
+        data = client_socket.recv(1024).decode()
+        # show in terminal
+        print("From the server -> ", data)
 
-    # show in terminal
-
-    # Repeat
+        # Repeat
+        message = input(" -> ")
 
     # ---------------------------------------------------------------
 
